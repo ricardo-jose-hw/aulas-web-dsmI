@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 40px;
+}
+
+li img,
+section img,
+section div img,
+.img ul li img {
+  width: 40px;
+}
+
+.nav {
+  padding: 50px;
+  display: flex;
+  background-color: #f4f4f4;
+  align-items: space-between;
+  justify-content: space-between;
+}
+.nav h1 {
+  color: #0000ff;
+}
+
+h1 {
+  display: inline-block;
+  color: #fb5;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 24px;
+  color: #0000ff;
+}
+
+h2 span {
+  font-size: 18px;
+  color: #999;
+}
+
+main div h3,
+main div span {
+  color: #f7f7f7;
+}
+
+.flex-items {
+  display: flex;
+  width: 120px;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.div-main {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  gap: 20px;
+  justify-content: center;
+}
+
+.item-main h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 4ch;
+  line-height: 1.5;
+  font-size: 24px;
+}
+.item-main span {
+  font-size: 18px;
+}
+
+.item-main {
+  margin-left: 40px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  padding-top: 20px;
+  border-radius: 4px;
+  gap: 10px;
+  width: 200px;
+  box-sizing: border-box;
+  background-color: #0000ff;
+  flex-wrap: wrap;
+}
+
+.user-profile img {
+  width: 150px;
+}
+
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-main img,
+.item-main h3 {
+  padding-top: 20px;
+  padding-left: 30px;
+  align-self: center;
+}
+
+main div p {
+  color: #a40;
+  display: block;
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #444;
+}
+
+ul,
+li,
+img {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.item-aplicacao img {
+  width: 50px;
+}
+
+.img-wid {
+  width: 10px;
+}
+
+.spacing {
+  gap: 10px;
+}
+
+.item-aplicacao {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f4a460;
+}
+.side-profile h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #999;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+.user-name {
+  margin-top: 10px;
+  padding: 4px;
+  border-radius: 4px;
+  background: #f2f2f2;
+}
+
+.side-profile {
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px black;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  max-width: 300px;
+  background: #fb5;
+  height: 100vh;
+}
+
+.interface {
+  display: flex;
+}
