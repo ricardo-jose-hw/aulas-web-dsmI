@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+.icon-junto {
+  cursor: pointer;
+}
+
 img {
   width: 40px;
 }
