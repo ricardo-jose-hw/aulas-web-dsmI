@@ -1,16 +1,16 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-
-
 img {
-  width: 40px;
+  width: 90px;
 }
 
 .ultimo {
-  padding-left: 20px;
+  margin-left: 20px;
+  width: 70px;
 }
 
 li img,
@@ -120,18 +120,13 @@ main div p {
 }
 
 ul,
-li,
-img {
+li {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 .item-aplicacao img {
-  width: 50px;
-}
-
-.img-wid {
-  width: 10px;
+  width: 80px;
 }
 
 .spacing {
@@ -148,6 +143,7 @@ img {
   font-family: Arial, Helvetica, sans-serif;
   color: #999;
   margin-top: 20px;
+  font-size: 32px;
   text-transform: uppercase;
 }
 .user-name {
@@ -166,16 +162,119 @@ img {
   flex-direction: column;
   max-width: 300px;
   background: #fb5;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .interface {
   display: flex;
 }
 
-
 .icon-junto {
   cursor: pointer;
 }
+.icon-junto img {
+  width: 70px;
+}
 
+@media (max-width: 700px) {
+  .nav {
+    padding: 15px;
+    flex-wrap: nowrap;
+  }
 
+  .nav h1 {
+    font-size: 18px;
+  }
+
+  .icon-junto img {
+    width: 30px;
+    flex-wrap: nowrap;
+  }
+
+  .ultimo {
+    width: 30px;
+  }
+  .icon-junto {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 715px) {
+  .icon-junto img {
+    width: 60px;
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 500px) {
+  .side-profile {
+    width: 120px; /* ← sidebar estreita */
+    max-width: 120px;
+    min-height: 100vh;
+    padding: 10px;
+  }
+
+  .user-profile img {
+    width: 90px;
+  }
+
+  .user-profile p {
+    font-size: 10px;
+  }
+  .item-aplicacao img {
+    width: 30px;
+  }
+  .item-aplicacao li {
+    font-size: 8px;
+  }
+  .side-profile h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #999;
+    margin-top: 10px;
+    flex-wrap: nowrap;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  .item-main {
+    width: 100px;
+    margin-left: 0px; /* ← era 20px, muito espaço */
+    padding: 0px;
+    gap: 5px;
+  }
+
+  .item-main img {
+    width: 40px; /* ← imagem menor */
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+
+  .item-main h3 {
+    font-size: 12px; /* ← texto menor */
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+
+  .item-main span {
+    font-size: 10px;
+  }
+
+  main div p {
+    font-size: 10px;
+    padding: 8px;
+  }
+  h2 {
+    margin-top: 10px; /* ← era 40px */
+    padding: 10px;
+  }
+  .div-main {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    gap: 10px;
+    margin: 0;
+  }
+}
